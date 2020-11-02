@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div th:switch="${#httpServletRequest.requestURI}" class="alert alert-success" role="alert">
+                <span th:case="'/admin/'">
+                    Bienvenido a tus publicaciones
+                </span>
+                <span th:case="'/admin/categoria'">
+                    Bienvenido a las categorias
+                </span>
+                <span th:case="'/admin/publicacion'">
+                    Bienvenido tus Publicaciones
+                </span>
+                <span th:case="'/admin/comentario'">
+                    Bienvenido a tus Coemnatarios
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
